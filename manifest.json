@@ -3,6 +3,11 @@
   "name": "Smooth reader zdic.net",
   "description": "It hides inaudible contents from MS Edge read aloud. https://www.microsoft.com/en-us/edge/features/read-aloud",
   "version": "0.0.1",
+  "action": {},
+  "background": {
+    "service_worker": "background.mjs",
+    "type": "module"
+  },
   "content_scripts": [
     {
       "matches": ["https://www.zdic.net/hans/*"],
